@@ -1,1 +1,611 @@
+Introduction to python
+
+Week 1
+
+•	Python skills are in high demand, but it's beneficial to learn other languages too.
+
+•	CapaCiTi courses can help you build a strong Python foundation.
+
+•	Job opportunities in Python include integrating with MySQL, network programming, and roles like Software Engineer, Developer, and Data Analyst.
+
+•	This course aims to quickly expand your programming knowledge and introduce you to new languages.
+
+History of python
+
+•	Python, conceived in the late 1980s and developed by Guido van Rossum, is a straightforward language with a rich standard library for various programming tasks.
+
+•	Its focus is on simplicity and readability, making it ideal for programmers who need to write and document code. 
+
+•	Python strikes a balance between speed and readability, making it easier to write applications.
+
+•	Implemented in C and relying on portable C libraries, Python seamlessly integrates with UNIX, Linux, POSIX environments, and MS-Windows.
+
+•	It draws inspiration from the ABC and Modula-3 languages, incorporating lessons from language and operating system support to create a versatile and widely compatible programming language.
+
+
+
+activity
+
+
+
+
+
+Comments in Python
+
+•	Comments in programming are text annotations in the source code that help programmers understand and document the code.
+
+•	In Python, comments begin with the # symbol and continue to the end of the line. They are ignored by the Python interpreter and are used to enhance code readability and provide documentation. 
+
+•	Comments can serve various purposes, including creating external documentation and working with programming tools. They should not appear within string literals.
+
+Intro to Variables:
+
+•	Variables are like storage units in a computer’s memory. 
+
+•	They hold data and can change, affecting the program’s state.
+
+•	Every programming language uses them, making them essential for writing code and transferring data Understand  functions.
+
+•	Understanding variables makes programming easier.
+
+Variables in python  start with initial  value, they go through  three state: 
+
+	Variable creation (Declaration)
+
+	Variable assignment (Initialization)
+
+	Variable changed (Execution)
+
+Once the code which created the variable has finished executing, the variable is destroyed.
+
+Variables are defined using “=” and follow naming conventions for clarity and readability.
+
+Variable  Rules:
+
+	Valid variable names in Python can use letters (upper or lower case), numbers, and underscores. 
+
+	They can’t start with a number or have spaces.
+
+Examples of valid names are :
+
+	“c” 
+
+	“admin.” 
+
+Invalid examples include:
+
+	“True,” 
+
+	“$name,” 
+
+	“12Graph.”
+
+Variables  are case sensitive;
+
+	In Python, identifiers are case-sensitive, so "firstName," "FirstName," "FIRSTNAME," and "firstname" are all distinct. 
+
+	Variables cannot have the same names as Python's keywords. 
+
+	To find Python's keywords, you can use the `dir(__builtins__)` function, which lists built-in attributes.
+
+	 Python's built-in exceptions start with capital letters, while the rest are functions or data type names.
+
+	 Identifiers that start and end with one or two underscores are special methods.
+
+Using variables: 
+
+All the variables need to be assigned into a data type.
+
+Data types: String- is a series of characters.
+
+                     : Integer- positive, negative whole number.
+
+•	In python the variable is assigned automatically to appropriate data type.
+
+•	For example, Python automatically assigns a variable to a string data-type, if an input or value is given that contains letters or words.
+
+•	Values of the same type can be manipulated together.
+
+•	Sometimes Python finds a way to manipulate values into a common type by casting the values automatically.
+
+
+
+ 
+
+Output is 45
+
+
+
+Casting:
+
+Casting in programming allows you to convert data from one data type to another, and it can be performed in two ways: implicitly and explicitly.
+
+1. Implicit Casting:
+
+- Implicit casting, also known as automatic casting, occurs when the compiler automatically converts a value from one data type to another when it is confident that there will be no data loss.
+
+- This often happens when you convert between related data types, such as from an integer variable to a floating-point variable or from one integer variable to another.
+
+2. Explicit Casting:
+
+- Explicit casting, also known as manual casting, is used when a value cannot be automatically cast from one data type to another because it may result in data loss.
+
+- To perform explicit casting, you need to write extra code to ensure that the value remains the same, and only the data type changes. A common example is casting from a floating-point value to an integer value.
+
+
+
+The need for casting arises when you want to ensure that the data you input or manipulate is in the correct format to produce the desired output. For example, if you have a floating-point value and you need it as an integer for a specific calculation, you will explicitly cast it to an integer. Casting is a fundamental concept in programming, allowing you to work with different data types and ensure data integrity and accuracy in your programs.
+
+
+
+ 
+
+
+
+
+
+	In the above example there is an error and the code will not be executed at all.
+
+	Num1 and num2 are defined using the same data types that can be cast automatically.
+
+	num1 is an integer data type and num2 is a string data type.
+
+	That means we need to cast either num1 or num2 so that they will have the same data type.
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+The following example illustrates how Python’s interpreter automatically casts two values and adds them together:
+
+ 
+
+
+
+
+
+ 
+
+The above piece of code will execute with no errors because it is possible to cast an integer to a floating-point without any data loss.
+
+ 
+
+Notice that no errors occur when converting from an integer to a float.
+
+Because the integer value can be cast to the float implicitly because there will be no data loss.
+
+But the floating point number cannot be cast to an integer that will result to data loss.
+
+The third printed line casts a string to a float successfully, because s_number is in the correct format. The rules to convert a string to a float are:
+
+•	The string should only contain numbers.
+
+•	Other than numbers the following are allowed:
+
+	Only one dot (.) character. Indicates the decimal starts after the dot (.) character.
+
+	A ‘+’ or ‘−‘ character at the beginning of the string. This indicates that the number is either positive or negative.
+
+
+
+Activity 1
+
+1.	String: is the series of characters that are enclosed in quotes.
+
+2.	Integer: is any positive or negative whole number.
+
+3.	We cast  a  string into an integer using different functions, the function take the string  and its argument  and return a corresponding integer value:
+
+•	Using int() function
+
+•	Using eval() function
+
+•	Using ast.literal_eval
+
+•	Using str.isdigit() function
+
+•	
+
+Input: str_num = "1001"
+
+Output: 1001 
+
+Explanation: In this, we are converting string into integer
+
+4.	 We convert an integer to a string using str() function, this function take any data type and convert it to a  string.
+
+num = 10
+
+ 
+
+# check  and print type of num variable
+
+print("Type of variable before conversion : ", type(num)) 
+
+ 
+
+      # convert the num into string
+
+      converted_num = str(num)
+
+
+
+      # check  and print type converted_num variable
+
+      print ("Type After conversion : ",type(converted_num))
+
+
+
+Output:
+
+Type of variable before conversion:  <class 'int'>
+
+Type After conversion:  <class 'str'>
+
+5.	Are set of guidelines established in PEP8. They set the standard for how we name variables, functions, classes, modules and other identifiers.
+
+6.	
+
+ 
+
+
+
+
+
+ 
+
+7.
+
+ 
+
+
+
+Data Types:
+
+	Each data type have a different function in a program.
+
+	Wrong data type can affect the computer functionality.
+
+	Data Types that are covered:
+
+o	Integer
+
+o	Booleans
+
+o	Floating point number
+
+o	Complex numbers
+
+o	String
+
+	Literals are an alternative to using variables. Examples of literals include
+
+Example:
+
+ 
+
+5 and 2 are constant values; they are not assigned to a variable, and therefore are literal values.
+
+ 
+
+Integer Data type:
+
+	Integers are positive or negative values, monetary numbers they have decimal values.
+
+	We say that Python is a static language because only values of a certain type can be assigned to variables, according to their data types assigned.
+
+Note: integer are always whole numbers.
+
+ 
+
+
+
+1. Implicit Casting: It's mentioned that `5/5` will return a float value of 1, which can be implicitly cast to an integer value without any precision loss.
+
+
+
+2. Basic Arithmetic Operators: The main operators for calculations are introduced: `+`, `-`, `*`, and `/`. These operators can be used for various mathematical operations, and it's noted that the `+` operator can also be used to concatenate strings.
+
+
+
+3. User Input: The `input()` command is introduced as a way to get input from the user. It's mentioned that real-life programs often require user input to provide accurate output.
+
+
+
+4.Problem Scenario: The scenario of a company called BIG VEGGIE selling fresh food to smaller stores is described. Fixed prices for various food items are given, and specific discount conditions for broccoli and potatoes are stated.
+
+
+
+5. Program Requirement: The program's objective is to calculate the total amount a store owes based on the weight of each product they purchase. It's important to consider discount conditions for broccoli and potatoes, with fixed prices for other products.
+
+
+
+6. Example 1 - Fresh Food Company: Although not shown in the provided text, there would likely be code examples in this section that demonstrate how to implement the program to calculate the total cost for the store's purchases.
+
+
+
+In summary, the text introduces key programming concepts like casting, arithmetic operators, user input, and describes a specific programming problem that involves calculations based on fixed prices and discount conditions for certain food items. It hints at implementing the solution through code, but the actual code is not provided.
+
+
+
+Asparagus = 30.54
+
+Beetroot = 1.45
+
+Broccoli = 14.43
+
+
+
+Garlic = 35.81
+
+Potatoes = 2.04
+
+print ("Enter the amount of Asparagus (kg):")
+
+aspa = float(input())
+
+print ("Enter the amount of Beetroot (kg):")
+
+beet = float(input()) 
+
+print ("Enter the amount of Broccoli (kg):")
+
+broc = float(input())
+
+print ("Enter the amount of Garlic (kg):")
+
+garl = float(input())
+
+print ("Enter the amount of Potatoes (kg):")
+
+pota = float(input())
+
+aspa = aspa * Asparagus
+
+beet = beet * Beetroot
+
+b = (((broc * Broccoli) * 20) / 100)
+
+broc = (broc * Broccoli) - b    
+
+garl = garl * Garlic
+
+p = (((pota * Potatoes) * 30) / 100)
+
+pota = (pota * Potatoes) - p
+
+total = aspa + beet + broc + garl + pota
+
+print ("The total the store has to pay: R", total)
+
+
+
+output:
+
+Enter the amount of Asparagus (kg):
+
+30.54
+
+Enter the amount of Beetroot (kg):
+
+1.45
+
+Enter the amount of Broccoli (kg):
+
+14.43
+
+Enter the amount of Garlic (kg):
+
+35.81
+
+Enter the amount of Potatoes (kg):
+
+2.04
+
+The total the store has to pay: R 2386.6432400000003
+
+In [ ]:
+
+
+
+BOOLEANS :
+
+BOOLEANS 
+
+•	Boolean data type has only two possible values, True and False. 
+
+•	When returning Booleans as strings, they are always "True" and "False". 
+
+•	True and False are case-sensitive, and Booleans are used to test conditions using the logical operators and, or, and not.
+
+The following are considered False: False, None, zero for any numeric data type, an empty sequence or mapping, and instances of user-defined classes that return zero or False when the __bool__() method is called. 
+
+ 
+
+
+
+Floating Point:
+
+The float data type in programming can be used as a function with zero or one argument, and its behavior is as follows:
+
+
+
+•	If called without any argument, float () returns the value 0.0.
+
+•	If called with an argument, it attempts to convert the value to a float data type.
+
+•	The argument must be a string containing only numbers and a maximum of one decimal point (dot) character.
+
+•	If the argument is convertible to a float, it will be successfully converted. For example, float ("21.765") will be converted to the float value 21.765.
+
+•	If the argument contains non-numeric characters or multiple decimal points, it will raise an exception. For example, float("FF909A") will result in an exception.
+
+In essence, the float data type is used for handling decimal numbers, and it's important to provide valid input when attempting to convert a string to a float to avoid errors.
+
+
+
+ 
+
+
+
+Complex numbers:
+
+
+
+•	Complex numbers are two numbers contained in a single variable.
+
+•	The real part (a floating-point number)
+
+•	The imaginary part (a floating-point number, often indicated with a 'j' or 'J' suffix)
+
+•	You can create complex numbers in Python using the complex () function or by directly writing them in the format real + imaginaryj.
+
+•	For example, a complex number can be written as 4 + 8j, where 4 is the real part and 8 is the imaginary part.
+
+ 
+
+
+
+- The absolute value of a complex number is its magnitude or modulus, calculated as the distance from the complex number to the origin (0,0) using the Pythagorean theorem.
+
+- Complex numbers consist of a real part and an imaginary part, often written as "a + bj" in Python.
+
+- In Python, integers can be implicitly converted to floats when working with complex numbers.
+
+- Complex numbers can be manipulated, and their real and imaginary parts can be operated on separately.
+
+
+
+Overall, complex numbers in Python allow you to work with both real and imaginary components and perform various operations on them.
+
+
+
+String:
+
+
+
+- Strings in Python are represented by the `str` data type, and they are immutable, meaning they cannot be changed after creation.
+
+- Strings are sequences of Unicode characters, allowing the representation of text and characters in a single manageable format.
+
+- You can create strings by calling the `str()` function. If no argument is provided, it returns an empty string.
+
+- When you pass a non-string argument to the `str()` function, it converts the argument into its string representation. For example, `str(17.2354)` creates a string representation of the number as "17.2354".
+
+- The `str()` function is commonly used to convert other data types into strings for various programming tasks.
+
+
+
+ 
+
+
+
+ 
+
+Lambda expression:
+
+
+
+- Lambda expressions in Python are used to create small, anonymous functions.
+
+- They are written using the `lambda` keyword and are useful when a simple function is needed for a short duration.
+
+- Lambda functions are restricted to a single expression and are essentially a compact way to define functions.
+
+- They can be used wherever function objects are required, such as passing a function as an argument.
+
+- Lambda functions can reference variables from the containing scope.
+
+- In the example provided, a lambda function is used to sort a list of pairs based on the second element of each pair. 
+
+
+
+Conventions about the content and formatting of documentation strings:
+
+Summary:
+
+
+
+- Documentation strings, or docstrings, provide information about Python objects like functions and methods.
+
+- The first line of a docstring should be a concise summary of the object's purpose, starting with a capital letter and ending with a period.
+
+- If there are more lines in the docstring, the second line should be blank, visually separating the summary from the rest of the description.
+
+- Function annotations are optional metadata about types used in user-defined functions. They are stored in the `__annotations__` attribute and do not affect the function's behavior.
+
+- Python's coding style is outlined in PEP 8, which promotes readability and consistency. Key points include using 4-space indentation, limiting lines to 79 characters, using blank lines to separate code blocks, and naming conventions for classes and functions.
+
+
+
+Overall, following good coding style practices and documenting code with docstrings helps make Python code more readable and maintainable.
+
+
+
+
+
+Operators
+
+	Operators are used to testing and manipulating.
+
+	- Expressions are combinations of objects and operators that yield a value. For example, `2 + 3` is an expression that results in the value 5.
+
+	- When comparing objects of different types, like comparing a string (str) and an integer (int), they are typically not equal. However, numeric types like int and float can be compared for equality.
+
+	- Using the comparison operators `<`, `<=`, `>`, and `>=` between objects of incompatible types, such as complex numbers, raises a `TypeError` exception. This happens when there is no defined order or comparison method between the two object types.
+
+Using Operators:
+
+	Operators are symbols (like +) or keywords (like and) that perform specific functions in expressions.
+
+	Operators require data to work with, which is called operands.
+
+	In expressions like "2 + 3," the numbers 2 and 3 serve as operands for the + operator.
+
+	In expressions like "a / b," the variables a and b act as operands for the / (divide) operator.
+
+	Operators and operands together make up expressions that produce results in Python.
+
+
+
+ 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+ Arithmetic Operators: +, -, *, /, % (Modulus), ** (Exponentiation), // (Floor Division). Comparison Operators: == (Equal), != (Not Equal), < (Less Than), > (Greater Than), <= (Less Than or Equal To), >= (Greater Than or Equal To). Logical Operators: and (Logical AND), or (Logical OR), not (Logical NOT). Assignment Operators: =, +=, -=, *=, /=, %=, **=, //=. Bitwise Operators: & (Bitwise AND), | (Bitwise OR), ^ (Bitwise XOR), ~ (Bitwise NOT), << (Left Shift), >> (Right Shift). Identity Operators: is (True if both operands are the same object), is not (True if operands are different objects). Membership Operators: in (True if a value is found in the sequence), not in (True if a value is not found in the sequence). Ternary Operator (Conditional Expression): x if condition else y: Returns x if the condition is True; otherwise, it returns y
+
+
+
 
